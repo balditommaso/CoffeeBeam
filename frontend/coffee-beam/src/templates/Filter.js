@@ -1,6 +1,6 @@
 import React from "react"
 import "../App.css"
-import { Result, Button, Divider, Input, InputNumber, Slider } from "antd"
+import { Result, Button, Divider, Input, InputNumber, Slider, Radio } from "antd"
 import { Checkbox, Col, Row } from 'antd'
 import { useEffect, useState } from "react"
 
@@ -46,6 +46,13 @@ function Filter({ setFilter }) {
     console.log('checked = ', checkedValues);
   };
 
+  const [sort, setSort] = useState(null);
+
+  const onChangeRadio = (e) => {
+    console.log('radio checked', e.target.value);
+    setSort(e.target.value);
+  };
+
   return (
     <div className="filter">
       <h3>Filter</h3>
@@ -67,6 +74,12 @@ function Filter({ setFilter }) {
 
     </Checkbox.Group>
       </div>
+      <h3 style={{marginTop: "15px"}}>Sort</h3>
+      <Radio.Group onChange={onChangeRadio} value={sort}>
+        <Radio value={"location"}>Location</Radio>
+        <Radio value={"price"}>Price</Radio>
+        <Radio value={"owner"}>Owner</Radio>
+      </Radio.Group>
     </div>
   )
 }
