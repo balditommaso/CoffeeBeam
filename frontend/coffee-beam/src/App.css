@@ -1,11 +1,85 @@
 .App {
   text-align: center;
-  background-image: url("./images/background.jpg");
 }
 body {
-  background-image: url("./images/background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  background-image: url("./images/background.jpg"); /* Set the background image */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Fix the background even when scrolling */
+}
+
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;
+}
+
+.header {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;
+}
+
+.explore {
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  text-align: centers;
+  justify-content: center; /* Horizontally center */
+  align-items: center;
+  color: black;
+}
+
+.filter {
+  background-color: whitesmoke;
+  margin-left: 1px;
+  padding: 5px;
+  border-radius: 10px;
+  border: solid 5px;
+  border-color: lightblue;
+}
+
+.dashboard {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.dashboard::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar for WebKit browsers */
+}
+
+.card {
+  padding: 3px;
+  text-align: center;
+  margin: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  overflow: auto;
+  cursor: pointer;
+}
+
+.card:hover {
+  opacity: 0.8;
+  background-color: blue;
+}
+
+.info {
+  background-color: purple;
+  text-align: center;
+  width: 660px;
 }
 
 .App-logo {
