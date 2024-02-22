@@ -51,7 +51,7 @@ function App() {
         {/* show the proper window based on the step */}
         <div className='main'>
             {step === 0 && <Explore setMachine={setMachine}/>}
-            {step === 1 && <Info setStep={setStep} card={machine}/>}
+            {step === 1 && <Info setStep={setStep} setMachine={setMachine} card={machine}/>}
             {step === 2 && <Close setMachine={setMachine}/>}
         </div>
       </Col>

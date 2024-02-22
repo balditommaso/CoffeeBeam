@@ -7,7 +7,7 @@ import { useEffect, useState } from "react"
 
 const DecimalStep = () => {
 
-  const [inputValue, setInputValue] = useState(1);
+  const [inputValue, setInputValue] = useState(1)
   const onChange = (value) => {
     if (isNaN(value)) {
       return;

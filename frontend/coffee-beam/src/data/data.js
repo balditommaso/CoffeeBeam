@@ -30,12 +30,14 @@ export const COFFEE_MACHINE = [
         price: 3,
         Warning: 0,
         payment: "Paypal",
+        url: "https://www.zelle.com",
         note: "This coffee machine is the best in the world!"
     },
     { 
         location: "Wilson Hall 1st floor", 
         owner: "Ben Hawks",
         coffee: "espresso",
+        url: "https://www.zelle.com",
         brand: "Nespresso",
         picture: null,
         price: 1,
@@ -52,6 +54,7 @@ export const COFFEE_MACHINE = [
         price: 2,
         Warning: 0,
         payment: "Paypal",
+        url: "https://www.zelle.com",
         note: "This coffee machine is the best in the world!"
     },
     { 
@@ -79,6 +82,7 @@ export const COFFEE_MACHINE = [
     { 
         location: "Wilson Hall 1st floor", 
         owner: "Ben Hawks",
+        url: "https://www.zelle.com",
         coffee: "espresso",
         brand: "Nespresso",
         picture: null,
@@ -89,6 +93,7 @@ export const COFFEE_MACHINE = [
     },
     { 
         location: "Wilson Hall 1st floor", 
+        url: "https://www.zelle.com",
         owner: "Ben Hawks",
         coffee: "espresso",
         brand: "Nespresso",
@@ -105,6 +110,7 @@ export const COFFEE_MACHINE = [
         brand: "Nespresso",
         picture: null,
         price: 1,
+        url: "https://www.zelle.com",
         Warning: 0,
         payment: "Paypal",
         note: "This coffee machine is the best in the world!"
@@ -114,6 +120,7 @@ export const COFFEE_MACHINE = [
         owner: "Ben Hawks",
         coffee: "espresso",
         brand: "Nespresso",
+        url: "https://www.zelle.com",
         picture: null,
         price: 2,
         Warning: 0,
@@ -129,6 +136,7 @@ export const COFFEE_MACHINE = [
         price: 3,
         Warning: 0,
         payment: "Paypal",
+        url: "https://www.zelle.com",
         note: "This coffee machine is the best in the world!"
     },
     

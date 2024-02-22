@@ -77,9 +77,13 @@ body {
 }
 
 .info {
-  background-color: purple;
+  background-color: whitesmoke;
   text-align: center;
   width: 660px;
+  padding: 5px;
+  border-radius: 10px;
+  border: solid 5px;
+  border-color: lightblue;
 }
 
 .App-logo {
