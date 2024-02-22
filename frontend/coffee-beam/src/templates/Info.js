@@ -1,7 +1,7 @@
 import React from "react"
 import "../App.css"
 import { Result, Button, Card, Col, Row, Flex, QRCode, Divider } from "antd"
-import { DoubleRightOutlined, CheckOutlined, CompassOutlined, DollarOutlined} from '@ant-design/icons';
+import { DoubleRightOutlined, CheckOutlined, CompassOutlined, WarningOutlined} from '@ant-design/icons';
 import { useEffect, useState } from "react"
 
 import { COFFEE_MACHINE } from "../data/data"
@@ -74,6 +74,9 @@ function Info({ setStep, setMachine, card }) {
               </Button>
               <Button type={"primary"} icon={<CheckOutlined />} onClick={() => {setStep(2)} }>
                 Paid
+              </Button>
+              <Button danger type={"primary"} icon={<WarningOutlined />} onClick={() => {setStep(2)} }>
+                Warning
               </Button>
             </Flex>
           </Row>
